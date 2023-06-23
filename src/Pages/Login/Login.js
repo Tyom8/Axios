@@ -9,13 +9,13 @@ export default () => {
     const passRef = useRef();
     const [err, setErr] = useState("");
 
-    useEffect(()=> {
-        const token = localStorage.getItem("token");
-        if(token) {
-            setOutToken(token);
-            navigate("/");
-        }
-    },[])
+    // useEffect(()=> {
+    //     const token = localStorage.getItem("token");
+    //     if(token) {
+    //         setOutToken(token);
+    //         navigate("/");
+    //     }
+    // },[])
 
     const loginFn = (event) => {
         event.preventDefault();
